@@ -4,9 +4,10 @@ const dbConnection =require("./config/dbConnection");
 const userRouter = require("./router/userRouter");
 const CustomerRouter = require("./router/CustomerRouter");
 const caseRouter = require("./router/caseRouter");
+const cors = require("cors");
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 app.use("/auth",userRouter);
 app.use("/customer",CustomerRouter);
