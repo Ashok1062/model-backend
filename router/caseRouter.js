@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { createCase, getCaseById, updateCase, deletedCase, getCase } = require("../Controller/CaseController");
+const { createCase, getCaseById, updateCase, deletedCase, getCase } = require("../Controller/caseController");
 const authMiddleware = require("../Middleware/authMiddleware");
 
 
