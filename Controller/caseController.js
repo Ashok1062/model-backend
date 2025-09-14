@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const cases = require("../Model/CaseModel");
+const cases = require("../Model/caseModel");
 
 const createCase = async (req, res) => {
   try {
